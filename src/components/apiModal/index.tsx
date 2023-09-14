@@ -91,21 +91,11 @@ function APIModal(props: { setApiKey: any; sidebar?: boolean }) {
               textAlign={'center'}
               color={textColor}
             >
-              Enter your OpenAI API Key
+              Enter your API Key
             </ModalHeader>
             <ModalCloseButton _focus={{ boxShadow: 'none' }} />
             <ModalBody p="0px">
-              <Text
-                color={grayColor}
-                fontWeight="500"
-                fontSize="md"
-                lineHeight="28px"
-                mb="22px"
-              >
-                You need an OpenAI API Key to use Horizon AI Template's
-                features. Your API Key is stored locally on your browser and
-                never sent anywhere else.
-              </Text>
+              
               <Flex mb="20px">
                 <Input
                   h="100%"
@@ -159,15 +149,7 @@ function APIModal(props: { setApiKey: any; sidebar?: boolean }) {
                   Save API Key
                 </Button>
               </Flex>
-              <Link
-                color={link}
-                fontSize="sm"
-                href="https://platform.openai.com/account/api-keys"
-                textDecoration="underline !important"
-                fontWeight="600"
-              >
-                Get your API key from Open AI Dashboard
-              </Link>
+           
               <Accordion allowToggle w="100%" my="16px">
                 <AccordionItem border="none">
                   <AccordionButton
@@ -232,16 +214,7 @@ function APIModal(props: { setApiKey: any; sidebar?: boolean }) {
                   </AccordionPanel>
                 </AccordionItem>
               </Accordion>
-              <Text
-                color={grayColor}
-                fontWeight="500"
-                fontSize="sm"
-                mb="42px"
-                mx="30px"
-              >
-                *The app will connect to OpenAI API server to check if your API
-                Key is working properly.
-              </Text>
+            
             </ModalBody>
           </Card>
         </ModalContent>
