@@ -59,7 +59,7 @@ export default function Chat(props: { apiKeyApp: string }) {
     { color: 'whiteAlpha.600' },
   );
   const handleTranslate = async () => {
-    const apiKey = "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";
+    const apiKey = apiKeyApp;
     setInputOnSubmit(inputCode);
 
     // Chat post conditions(maximum number of characters, valid message etc.)

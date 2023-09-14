@@ -13,7 +13,7 @@ const handler = async (req: Request): Promise<Response> => {
     if (apiKey) {
       apiKeyFinal = apiKey;
     } else {
-      apiKeyFinal = "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";
+      apiKeyFinal = "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";
     }
 
     if (!apiKey) {
